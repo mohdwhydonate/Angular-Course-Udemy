@@ -24,5 +24,7 @@ onCreateServer(){
 onUpdateServerName(event: any){
   // this.serverName= event.target.value;
 }
-
+onClick(){
+  this.userName='';
+}
 }
