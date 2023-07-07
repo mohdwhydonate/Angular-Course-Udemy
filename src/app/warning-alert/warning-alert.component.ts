@@ -1,3 +1,4 @@
+import { getLocaleDateFormat } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -26,5 +27,9 @@ onUpdateServerName(event: any){
 }
 onClick(){
   this.userName='';
+  
+}
+getColor(){
+  
 }
 }

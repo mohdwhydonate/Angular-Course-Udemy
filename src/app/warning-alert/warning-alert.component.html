@@ -13,4 +13,4 @@
 <input type="text" class="form-control"[(ngModel)]= 'userName'>
 <p> {{userName}}</p>
 <button class="btn btn-primary"[disabled]="userName===''"(click)="onClick()">Submit </button>
-<p ngStyle="{backgroudColor: getColor()}"> udemy coursex</p>
+<p [ngStyle]="{backgroudColor: getColor()}"> udemy course</p>
