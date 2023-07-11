@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment3.component.css']
 })
 export class Assignment3Component {
+[x: string]: any;
 showPass=false;
 log:any[]=[];
 onToggleDetails(){
