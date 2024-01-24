@@ -1,15 +1,21 @@
 <!-- <app-warning-alert> </app-warning-alert>
 <app-success-alert> </app-success-alert> -->
 <!-- <app-assignment3> </app-assignment3> -->
-<app-header> </app-header>
+<app-header (featureSelected)="onNavigate($event)"> </app-header>
 
 <div class="container">
-<div class="row">
+  <div class="row">
     <div class="col-md-12">
-
-        
-        <app-recipes> </app-recipes>
-        <app-shopping-list> </app-shopping-list>
+      <app-recipes *ngIf="loadedFeature === 'recipe'"> </app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'">
+      </app-shopping-list>
     </div>
+  </div>
 </div>
-</div>
+<!-- <app-section5> </app-section5> -->
+<!-- <app-assignment4> </app-assignment4> -->
+<!-- <app-section7></app-section7> -->
+
+<!-- <app-section9></app-section9> -->
+
+<!-- <app-assignment5> </app-assignment5> -->
